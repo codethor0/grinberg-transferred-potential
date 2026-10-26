@@ -1,0 +1,33 @@
+{
+  "seed": 20261025,
+  "simulated_pairs_per_band": 5000,
+  "samples_per_recording": 128,
+  "sampling_rate_hz": 256,
+  "nominal_alpha": 0.05,
+  "results": [
+    {
+      "band_hz": [
+        13,
+        35
+      ],
+      "naive_rejections": 2164,
+      "circular_shift_rejections": 227,
+      "naive_false_positive_rate": 0.4328,
+      "circular_shift_false_positive_rate": 0.0454,
+      "naive_median_p": 0.0907727169105178,
+      "circular_shift_median_p": 0.49609375
+    },
+    {
+      "band_hz": [
+        4,
+        12
+      ],
+      "naive_rejections": 3103,
+      "circular_shift_rejections": 254,
+      "naive_false_positive_rate": 0.6206,
+      "circular_shift_false_positive_rate": 0.0508,
+      "naive_median_p": 0.008694518577379882,
+      "circular_shift_median_p": 0.4921875
+    }
+  ]
+}

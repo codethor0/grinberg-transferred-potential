@@ -1,0 +1,2 @@
+BAND 13-35Hz n=5000 naive_p<.05 0.4328 nullshift_p<=.05 0.0454 naive_median=0.0908 shift_median=0.4961
+BAND 4-12Hz n=5000 naive_p<.05 0.6206 nullshift_p<=.05 0.0508 naive_median=0.0087 shift_median=0.4922
