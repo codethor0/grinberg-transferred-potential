@@ -1,40 +1,86 @@
+<div align="center">
+
 # Reassessing the Transferred-Potential Hypothesis
 
-**Subtitle:** Syntergic Theory, Isolated-Brain EEG Evidence, and Reproducible Tests  
-**Author:** Thor Thor  
-**Status:** Author-approved public release; independent adversarial review incorporated
+### Syntergic Theory, Isolated-Brain EEG Evidence, and Reproducible Tests
 
-## Read the paper
+**Thor Thor · Independent Open-Source Researcher**
 
-- `manuscript/Grinberg_Transferred_Potential_Research_Paper.pdf` — final-review reading copy.
-- `manuscript/Grinberg_Transferred_Potential_Research_Paper.docx` — editable copy with native Word equations.
-- `manuscript/Manuscript_Source.md` — canonical text, mathematics, tables, captions, references, and appendices.
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23652517-0969da)](https://doi.org/10.5281/zenodo.23652517)
+[![Release verification](https://github.com/codethor0/grinberg-transferred-potential/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/codethor0/grinberg-transferred-potential/actions/workflows/verify.yml)
+[![Manuscript: CC BY 4.0](https://img.shields.io/badge/Manuscript-CC%20BY%204.0-2e8b57)](LICENSE.md)
+[![Code: MIT](https://img.shields.io/badge/Code-MIT-2e8b57)](LICENSE.md)
 
-The article is a source-traced critical methodological review with an original synthetic demonstration. It does not claim a new human EEG experiment, a completed retrospective EEG reanalysis, external peer review, or demonstrated anomalous brain-to-brain communication.
+<img src="cover/brain_cover.png" alt="Black-and-white human brain illustration from the manuscript cover" width="760">
 
-## Reproduce the computational work
+**[Read the paper](manuscript/Grinberg_Transferred_Potential_Research_Paper.pdf) · [Zenodo record](https://zenodo.org/records/23652517) · [Reproduce the benchmark](reproducibility/README.md)**
 
-Run:
+</div>
+
+## About this research
+
+Jacobo Grinberg-Zylberbaum's transferred-potential hypothesis remains experimentally testable, but the available evidence does **not** establish a reliable new brain-to-brain communication mechanism.
+
+This independent preprint provides a source-traced critical methodological review, separates the original transferred-waveform claim from related inter-brain findings, and supplies an executable synthetic null benchmark plus a proposed preregistered multi-laboratory protocol. It reports no new human EEG experiment and no demonstrated anomalous communication.
+
+## What the synthetic benchmark shows
+
+Using 5,000 independent synthetic signal pairs per frequency condition:
+
+| Frequency band | Naive Pearson rejection rate | Circular-shift rejection rate |
+| --- | ---: | ---: |
+| 13–35 Hz | 43.28% | 4.54% |
+| 4–12 Hz | 62.06% | 5.08% |
+
+These are synthetic methodological results—not human EEG findings. They illustrate why analytical dependence and appropriate null calibration matter when evaluating transferred-potential evidence.
+
+## Read and cite
+
+- **[Final PDF](manuscript/Grinberg_Transferred_Potential_Research_Paper.pdf)** — 38-page published manuscript.
+- **[Editable DOCX](manuscript/Grinberg_Transferred_Potential_Research_Paper.docx)** — native Word equations.
+- **[Markdown source](manuscript/Manuscript_Source.md)** — canonical text, mathematics, references, and appendices.
+- **[Verification report](VERIFICATION_REPORT.md)** — numerical, structural, visual, and package-integrity results.
+- **[Audit disposition](AUDIT_DISPOSITION.md)** — disposition of all 46 independent-audit findings.
+
+```bibtex
+@misc{thor2026transferredpotential,
+  author    = {Thor, Thor},
+  title     = {Reassessing the Transferred-Potential Hypothesis: Syntergic Theory, Isolated-Brain EEG Evidence, and Reproducible Tests},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23652517},
+  url       = {https://doi.org/10.5281/zenodo.23652517}
+}
+```
+
+## Reproduce
+
+```sh
+python -m pip install -r reproducibility/requirements_executed.txt
+python reproducibility/synthetic_null_demo.py
+```
+
+To regenerate the benchmark, figures, and manuscript PDF:
 
 ```sh
 sh reproducibility/run_all.sh
 ```
 
-This regenerates the synthetic benchmark, all nine figures in PNG and PDF formats, and the manuscript PDF. The expected false-positive rates are 43.28% and 4.54% for naive and circular-shift tests in the 13–35 Hz condition, and 62.06% and 5.08% in the 4–12 Hz condition. See `reproducibility/README.md` for dependencies, interpretation limits, expected counts, and the Word-build boundary.
+See [reproducibility/README.md](reproducibility/README.md) for dependencies, expected outputs, interpretation limits, and the Word-build boundary. Automated verification runs on every push to `main` and every pull request.
 
-## Review and release documents
+## Repository map
 
-- `VERIFICATION_REPORT.md` — observed final verification results and scope.
-- `AUDIT_DISPOSITION.md` — disposition of all 46 independent-audit findings.
-- `ENVIRONMENT.md` — measured software environment.
-- `RIGHTS_MANIFEST.md` — original-asset and third-party-rights boundaries.
-- `RELEASE_STATUS.md` — public-release and metadata status.
-- `metadata/ZENODO_METADATA_PROPOSED.md` — metadata used to prepare the deposit.
-- `LICENSE.md` — author-approved license scopes and notices.
-- `SHA256SUMS.txt` — SHA-256 hashes for every candidate file except the checksum file itself.
+| Path | Contents |
+| --- | --- |
+| `manuscript/` | Published PDF, editable DOCX, and canonical Markdown |
+| `figures/` | Nine original figures in PNG and PDF formats |
+| `cover/` | Black-and-white brain cover illustration |
+| `reproducibility/` | Benchmark, figure and document builders, outputs, and verifier |
+| `metadata/` | Deposit metadata |
+| `SHA256SUMS.txt` | File-level integrity manifest |
 
-## License
+## License and research boundaries
 
-The manuscript, figures, cover, documentation, and synthetic outputs are licensed under **CC BY 4.0**. The original code under `reproducibility/` is licensed under the **MIT License**. See `LICENSE.md` for the exact scopes and notices.
+Manuscript, figures, cover, documentation, and synthetic outputs: **CC BY 4.0**. Original code: **MIT**. See [LICENSE.md](LICENSE.md) and [RIGHTS_MANIFEST.md](RIGHTS_MANIFEST.md).
 
-No third-party source PDFs are included. The independent adversarial review is complete and incorporated, and the author has approved the exact final files, byline, metadata, and licenses for public release.
+This is an independent preprint, not a journal-peer-reviewed article. No third-party source PDFs, private research bundles, raw human EEG, or participant data are included.

@@ -52,7 +52,7 @@ These are synthetic or analytic methodological results, not human EEG findings.
 
 - Nine readable PNG/PDF figure pairs are present, plus the Figure 7 JSON data and the 1536 × 1024 cover PNG.
 - Figure 7 values match the executed benchmark.
-- The candidate contains 44 files including `SHA256SUMS.txt` and `LICENSE.md`.
+- The repository contains 45 files including `SHA256SUMS.txt`, `LICENSE.md`, and the low-maintenance GitHub Actions verification workflow.
 - The manifest covers every candidate file except itself, and every listed digest matches.
 - Every archived file is byte-identical to its candidate-directory counterpart; ZIP integrity and exact file coverage pass.
 - Third-party source PDFs, raw independent-audit material, private review folders, temporary render files, symbolic links, and private absolute paths are excluded.
