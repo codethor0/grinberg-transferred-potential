@@ -2,7 +2,7 @@
 
 ## Current state
 
-This directory is a **private public-release candidate for author approval**. It is not represented as journal peer reviewed, published, assigned a DOI, or cleared for immediate upload. No repository deposit has been performed.
+This directory is the **author-approved public-release package**. It is not represented as journal peer reviewed. The exact package has been published in the `codethor0/grinberg-transferred-potential` GitHub repository; Zenodo publication and DOI assignment are completed through the deposit record rather than asserted here in advance.
 
 The independent adversarial scientific audit has been completed, adjudicated, and incorporated into the manuscript. Draft/version labels and visible revision markers have been removed, the full explanatory text is retained, and the synthetic benchmark and figures are accompanied by executable source.
 
@@ -15,11 +15,11 @@ The independent adversarial scientific audit has been completed, adjudicated, an
 - Candidate file hashes and package contents are checked by the final verification workflow.
 - No third-party source publication PDFs are included.
 
-## Gates that remain external to technical verification
+## External release gates completed
 
-1. **Author release approval:** the author must explicitly approve the exact reviewed files for public release.
-2. **License selection:** the author must select and state the manuscript/figure license and, if desired, a separate code license. No license is selected by this package.
-3. **Metadata confirmation:** verify the author byline, ORCID, affiliation, actual publication date, and repository metadata immediately before deposit.
-4. **DOI handling:** leave the DOI blank until Zenodo assigns or reserves a real identifier. Do not fabricate or preprint an unassigned DOI.
+1. **Author release approval:** explicitly granted for public release.
+2. **License selection:** CC BY 4.0 for the manuscript, figures, cover, documentation, and synthetic outputs; MIT License for the original code. See `LICENSE.md`.
+3. **Metadata confirmation:** Thor Thor; ORCID `0009-0001-6573-385X`; Independent Open-Source Researcher; actual publication date supplied by Zenodo; software repository linked to the deposit.
+4. **DOI handling:** no DOI is printed in this package. Zenodo supplies the genuine identifier upon publication.
 
-A successful technical verification report does not substitute for items 1–4. The independent scientific-review gate has been addressed, but unresolved historical sources remain explicitly labeled in the manuscript. After any further change, regenerate the PDF, synchronize the DOCX, rerun all checks, and replace the checksum manifest before asking for release approval.
+Technical verification does not substitute for these external decisions; the author completed them separately. The independent scientific-review gate has been addressed, and unresolved historical sources remain explicitly labeled in the manuscript. Any later substantive change requires renewed verification and a replacement checksum manifest.

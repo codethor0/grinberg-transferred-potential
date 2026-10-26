@@ -1,13 +1,13 @@
 # Final manuscript and release-candidate verification report
 
 **Verification date:** October 25, 2026  
-**Automated release gate:** **PASS: 129 checks passed, 0 failed**  
+**Automated release gate:** **PASS: 127 checks passed, 0 failed**  
 **Regression suite:** **PASS: 3 tests, 0 failures**  
-**Release state:** Clean final manuscript for author approval; not uploaded or assigned a DOI at verification time
+**Release state:** Author-approved public release; manuscript files unchanged by the final licensing update
 
 ## Scope and result
 
-The gate checked the canonical manuscript, final PDF and DOCX, cover illustration, all figure assets, recorded and freshly executed benchmark results, numerical derivations, citation coverage, document structure, visual-inspection reports, package exclusions, SHA-256 manifest, and byte identity between the candidate directory and release ZIP. The 129-check result includes the external visual-inspection reports and the local full-file DOCX validator. The verifier included in the package can also run the scientific, numerical, structural, benchmark, manifest, and ZIP checks without those external tools.
+The gate checked the canonical manuscript, final PDF and DOCX, cover illustration, all figure assets, recorded and freshly executed benchmark results, numerical derivations, citation coverage, document structure, visual-inspection reports, package exclusions, SHA-256 manifest, and byte identity between the candidate directory and release ZIP. The 127-check result includes the external visual-inspection reports. The previously passed full-file DOCX validator remains applicable because the DOCX hash is unchanged. The verifier included in the package can also run the scientific, numerical, structural, benchmark, manifest, and ZIP checks without those external tools.
 
 The independent adversarial audit contained 46 findings. The disposition record accounts for every finding: 43 incorporated, one confirmed without correction, one not applied because the underlying source was not inspected, and one retained as an author-controlled release gate.
 
@@ -52,7 +52,7 @@ These are synthetic or analytic methodological results, not human EEG findings.
 
 - Nine readable PNG/PDF figure pairs are present, plus the Figure 7 JSON data and the 1536 × 1024 cover PNG.
 - Figure 7 values match the executed benchmark.
-- The candidate contains 43 files including `SHA256SUMS.txt`.
+- The candidate contains 44 files including `SHA256SUMS.txt` and `LICENSE.md`.
 - The manifest covers every candidate file except itself, and every listed digest matches.
 - Every archived file is byte-identical to its candidate-directory counterpart; ZIP integrity and exact file coverage pass.
 - Third-party source PDFs, raw independent-audit material, private review folders, temporary render files, symbolic links, and private absolute paths are excluded.
@@ -67,8 +67,8 @@ MD    211f186a0bf7803c196006e5480a1ccfce9f833635daed280bbea6f73e1ead13
 
 The complete file-level manifest is `SHA256SUMS.txt`.
 
-## Remaining external gates
+## External release decisions
 
-Technical verification does not establish the historical claim, replace missing raw EEG or uninspected sources, or constitute journal peer review. Before any public Zenodo release, the author must still confirm the byline and proposed metadata and select the manuscript/figure and code licenses. A DOI must remain blank until Zenodo assigns or reserves a real identifier.
+Technical verification does not establish the historical claim, replace missing raw EEG or uninspected sources, or constitute journal peer review. The author confirmed the byline and metadata and selected CC BY 4.0 for the manuscript, figures, cover, documentation, and synthetic outputs, plus the MIT License for original code. No DOI is printed in this package; Zenodo supplies the genuine identifier upon publication.
 
-**At verification time, no public release, Zenodo upload, or DOI assignment had occurred.**
+**At verification time, the GitHub package was public and the Zenodo record awaited final publication.**

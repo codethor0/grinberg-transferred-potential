@@ -20,9 +20,9 @@
 
 **Review status:** Independent preprint; journal peer review has not occurred. An independent adversarial scientific audit informed the manuscript.
 
-**Access:** Public only after explicit author approval of the exact deposit files.
+**Access:** Public release approved by the author for the exact verified deposit files.
 
-**License:** Pending explicit author selection. State separately which license covers the manuscript/figures and which covers code if they differ.
+**License:** Creative Commons Attribution 4.0 International (CC BY 4.0) for the manuscript, figures, cover, documentation, and synthetic outputs; MIT License for the original code under `reproducibility/`. See `LICENSE.md`.
 
 **DOI:** Not assigned or reserved in this candidate. Use only a real Zenodo-assigned or Zenodo-reserved identifier.
 
@@ -46,7 +46,9 @@ Include the exact benchmark script, numerical outputs, pinned environment, origi
 
 ## Related identifiers
 
-Leave blank unless a valid persistent identifier exists for a software repository, preregistration, dataset, or earlier formal publication of the same work. Do not invent relationships or identifiers.
+Software repository: https://github.com/codethor0/grinberg-transferred-potential
+
+No preregistration, separate dataset, or earlier formal publication identifier is asserted.
 
 ## Proposed upload files
 

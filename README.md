@@ -2,7 +2,7 @@
 
 **Subtitle:** Syntergic Theory, Isolated-Brain EEG Evidence, and Reproducible Tests  
 **Author:** Thor Thor  
-**Status:** Clean final manuscript for author release approval; independent adversarial review incorporated
+**Status:** Author-approved public release; independent adversarial review incorporated
 
 ## Read the paper
 
@@ -28,8 +28,13 @@ This regenerates the synthetic benchmark, all nine figures in PNG and PDF format
 - `AUDIT_DISPOSITION.md` — disposition of all 46 independent-audit findings.
 - `ENVIRONMENT.md` — measured software environment.
 - `RIGHTS_MANIFEST.md` — original-asset and third-party-rights boundaries.
-- `RELEASE_STATUS.md` — remaining license, metadata, and author-approval gates.
-- `metadata/ZENODO_METADATA_PROPOSED.md` — proposed metadata for a later deposit; not a published record.
+- `RELEASE_STATUS.md` — public-release and metadata status.
+- `metadata/ZENODO_METADATA_PROPOSED.md` — metadata used to prepare the deposit.
+- `LICENSE.md` — author-approved license scopes and notices.
 - `SHA256SUMS.txt` — SHA-256 hashes for every candidate file except the checksum file itself.
 
-No third-party source PDFs are included. No DOI or public license has been assigned or selected. The independent adversarial review is complete and incorporated; do not upload until the author explicitly approves the exact final files, byline, metadata, and license or licenses.
+## License
+
+The manuscript, figures, cover, documentation, and synthetic outputs are licensed under **CC BY 4.0**. The original code under `reproducibility/` is licensed under the **MIT License**. See `LICENSE.md` for the exact scopes and notices.
+
+No third-party source PDFs are included. The independent adversarial review is complete and incorporated, and the author has approved the exact final files, byline, metadata, and licenses for public release.

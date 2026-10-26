@@ -2,7 +2,7 @@
 
 ## Original material supplied in this candidate
 
-Subject to verification of authorship and the author's eventual license choice, the following materials were created for this manuscript:
+The author has verified and approved the following original materials for public release under the license scopes stated below and in `LICENSE.md`:
 
 - `manuscript/Manuscript_Source.md`: editable article text, equations, tables, captions, references, and appendices.
 - `manuscript/Grinberg_Transferred_Potential_Research_Paper.pdf`: built manifestation of that source.
@@ -12,7 +12,7 @@ Subject to verification of authorship and the author's eventual license choice, 
 - `reproducibility/*.py`, `reproducibility/run_all.sh`, and `reproducibility/manuscript.template`: original reproduction and document-build code.
 - `reproducibility/results.json`, `reproducibility/simulation_check.txt`, and `figures/figure7_results.json`: outputs of the original synthetic computation.
 
-No license is granted or selected by this manifest. The author must choose the public license explicitly before release. If different licenses will cover text/figures and code, the deposit must identify their scopes clearly.
+The author explicitly selected **CC BY 4.0** for the manuscript, figures, cover, documentation, and synthetic outputs, and the **MIT License** for the original code under `reproducibility/`. The full scope statements and license notices are in `LICENSE.md`.
 
 ## Third-party material not redistributed here
 
